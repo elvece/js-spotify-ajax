@@ -34,4 +34,8 @@ function getResults(searchTerm){
     });
     $('.results').html(display);
   });
+
+  request.fail(function(error){
+    alert("Something went wrong!");
+  });
 }
